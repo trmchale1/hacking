@@ -7,9 +7,9 @@ apt-get install -y sshpass
 
 for LINE in $(cat pass.txt)
 do
-    pass_two=$LINE
+    pass_three=$LINE
 done
 
-level_three_pass=$(sshpass -p $pass_two ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit3@bandit.labs.overthewire.org 'cd inhere && cat .hidden')
+level_four_pass=$(sshpass -p $pass_three ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit3@bandit.labs.overthewire.org 'cd inhere && cat .hidden')
 
-echo $level_three_pass >> "pass.txt"
+echo $level_four_pass >> "pass.txt"
