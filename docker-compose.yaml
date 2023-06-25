@@ -1,0 +1,9 @@
+services:
+  os:
+    image: kalilinux/kali-rolling
+    command: sleep infinity
+    ports:
+      - 127.0.0.1:3000:3000
+    working_dir: /os
+    volumes:
+      - ./:/os
