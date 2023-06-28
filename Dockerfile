@@ -9,6 +9,9 @@ RUN apt-get -y upgrade
 RUN apt-get -y dist-upgrade
 RUN apt-get -y autoremove
 RUN apt-get -y clean
+RUN su -
+RUN apt-get install sudo -y
+RUN 
 
 # what libs / tools should we add?
 #RUN apt-get install kali-tools-top10
