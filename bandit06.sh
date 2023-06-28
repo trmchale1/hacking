@@ -10,7 +10,11 @@ do
     pass_five=$LINE
 done
 
-level_three_pass=$(sshpass -p $pass_five ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit5@bandit.labs.overthewire.org 'cat ./inhere/maybehere07/.file2')
+# what script 
+
+SIX_SCRIPT=""
+
+level_three_pass=$(sshpass -p $pass_five ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit5@bandit.labs.overthewire.org "$SIX_SCRIPT")
 
 
 echo $level_three_pass >> "pass.txt"
