@@ -1,0 +1,1 @@
+# These are notes for bandit00

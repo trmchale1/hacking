@@ -1,0 +1,10 @@
+Username: natas0
+Password: natas0
+URL:      http://natas0.natas.labs.overthewire.org
+
+In the html is the password to level 1
+
+For level 2, also in the html, use the chrome bar at the top
+
+h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
+
