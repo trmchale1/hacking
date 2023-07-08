@@ -1,3 +1,3 @@
 # hacking
 
-These are the answers to the OverTheWire hacking challenges
+This is a docker image that contains hacking tools built from `kali-linux`
