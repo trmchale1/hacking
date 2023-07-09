@@ -35,3 +35,6 @@ With the XML output, we can easily create HTML reports that are easy to read, ev
 badgersec@htb[/htb]$ xsltproc target.xml -o target.html
 ```
 
+
+Next: [[Service Enumeration]]
+

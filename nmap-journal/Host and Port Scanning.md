@@ -1,4 +1,6 @@
-Previous: [[Scan Network Range]]
+# Host and Port Scanning
+
+
 
 After we have found out that our target is alive, we want to get a more accurate picture of the system. The information we need includes:
 
@@ -15,6 +17,12 @@ After we have found out that our target is alive, we want to get a more accurate
 | `unfiltered` |This state of a port only occurs during the **TCP-ACK** scan and means that the port is accessible, but it cannot be determined whether it is open or closed. |
 |  `open-filtered` | If we do not get a response for a specific port, `Nmap` will set it to that state. This indicates that a firewall or packet filter may protect the port. |
 | `closed-filtered` | This state only occurs in the **IP ID idle** scans and indicates that it was impossible to determine if the scanned port is closed or filtered by a firewall. | 
+
+## Discovering Open TCP Ports
+
+By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default. This means that if we do not define ports and scanning methods, these parameters are set automatically. We can define the ports one by one (`-p 22,25,80,139,445`), by range (`-p 22-445`), by top ports (`--top-ports=10`) from the `Nmap` database that have been signed as most frequent, by scanning all ports (`-p-`) but also by defining a fast port scan, which contains top 100 ports (`-F`).
+
+#### Scanning Top 10 TCP Ports
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 --top-ports=10 
@@ -41,6 +49,8 @@ Nmap done: 1 IP address (1 host up) scanned in 1.44 seconds
 
 We see that we only scanned the top 10 TCP ports of our target, and `Nmap` displays their state accordingly. If we trace the packets `Nmap` sends, we will see the `RST` flag on `TCP port 21` that our target sends back to us. To have a clear view of the SYN scan, we disable the ICMP echo requests (`-Pn`), DNS resolution (`-n`), and ARP ping scan (`--disable-arp-ping`).
 
+#### Nmap - Trace the Packets
+
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -p 21 --packet-trace -Pn -n --disable-arp-ping
 
@@ -58,5 +68,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
 ```
 
 We can see from the SENT line that we (`10.10.14.2`) sent a TCP packet with the `SYN` flag (`S`) to our target (`10.129.2.28`). In the next RCVD line, we can see that the target responds with a TCP packet containing the `RST` and `ACK` flags (`RA`). `RST` and `ACK` flags are used to acknowledge receipt of the TCP packet (`ACK`) and to end the TCP session (`RST`).
+
+Next: [[Connect Scan]]
 
 

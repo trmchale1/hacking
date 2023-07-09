@@ -6,8 +6,6 @@ When Nmap sends a packet, it takes some time (`Round-Trip-Time` - `RTT`) to re
 
 #### Default Scan
 
-  Default Scan
-
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.0/24 -F
 
@@ -17,8 +15,6 @@ Nmap done: 256 IP addresses (10 hosts up) scanned in 39.44 seconds
 
 #### Default Scan - Found Open Ports
 
-  Default Scan - Found Open Ports
-
 ```shell-session
 badgersec@htb[/htb]$ cat tnet.default | grep "/tcp" | wc -l
 
@@ -26,8 +22,6 @@ badgersec@htb[/htb]$ cat tnet.default | grep "/tcp" | wc -l
 ```
 
 #### Optimized Scan - Found Open Ports
-
-  Optimized Scan - Found Open Ports
 
 ```shell-session
 badgersec@htb[/htb]$ cat tnet.minrate300 | grep "/tcp" | wc -l
@@ -50,8 +44,6 @@ These templates contain options that we can also set manually, and have seen som
 
 #### Default Scan
 
-  Default Scan
-
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.0/24 -F -oN tnet.default 
 
@@ -60,8 +52,6 @@ Nmap done: 256 IP addresses (10 hosts up) scanned in 32.44 seconds
 ```
 
 #### Insane Scan
-
-  Insane Scan
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.0/24 -F -oN tnet.T5 -T 5
@@ -72,8 +62,6 @@ Nmap done: 256 IP addresses (10 hosts up) scanned in 18.07 seconds
 
 #### Default Scan - Found Open Ports
 
-  Default Scan - Found Open Ports
-
 ```shell-session
 badgersec@htb[/htb]$ cat tnet.default | grep "/tcp" | wc -l
 
@@ -81,8 +69,6 @@ badgersec@htb[/htb]$ cat tnet.default | grep "/tcp" | wc -l
 ```
 
 #### Insane Scan - Found Open Ports
-
-  Insane Scan - Found Open Ports
 
 ```shell-session
 badgersec@htb[/htb]$ cat tnet.T5 | grep "/tcp" | wc -l

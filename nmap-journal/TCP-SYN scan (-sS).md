@@ -1,4 +1,5 @@
-Previous: [[Intro to nmap --help]]
+# TCP-SYN scan (-sS)
+
 
 To start, the TCP-SYN scan (`-sS`) is one of the default settings unless we have defined otherwise and is also one of the most popular scan methods.
 
@@ -24,4 +25,5 @@ PORT     STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
 ```
 
-Next: [[Scan Network Range]]
+Next: [[Host Discovery]]
+

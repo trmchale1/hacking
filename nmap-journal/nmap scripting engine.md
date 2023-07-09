@@ -18,6 +18,26 @@ Nmap Scripting Engine (`NSE`) is another handy feature of `Nmap`. It provides u
 | `version` | Extension for service detection. |
 | `vuln` | Identification of specific vulnerabilities. |
 
+We have several ways to define the desired scripts in `Nmap`.
+
+#### Default Scripts
+
+```shell-session
+badgersec@htb[/htb]$ sudo nmap <target> -sC
+```
+
+#### Specific Scripts Category
+
+```shell-session
+badgersec@htb[/htb]$ sudo nmap <target> --script <category>
+```
+
+#### Defined Scripts
+
+```shell-session
+badgersec@htb[/htb]$ sudo nmap <target> --script <script-name>,<script-name>,...
+```
+
 For example, let us keep working with the target SMTP port and see the results we get with two defined scripts.
 
 #### Nmap - Specifying Scripts
@@ -69,13 +89,14 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 11.36 seconds
 ```
 
+With the help of the used scan option (`-A`), we found out what kind of web server (`Apache 2.4.29`) is running on the system, which web application (`WordPress 5.3.4`) is used, and the title (`blog.inlanefreight.com`) of the web page. Also, `Nmap` shows that it is likely to be `Linux` (`96%`) operating system.
+
+
 ## Vulnerability Assessment
 
 Now let us move on to HTTP port 80 and see what information and vulnerabilities we can find using the `vuln` category from `NSE`.
 
 #### Nmap - Vuln Category
-
-  Nmap - Vuln Category
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -p 80 -sV --script vuln 
@@ -108,4 +129,6 @@ PORT   STATE SERVICE VERSION
 |     	CVE-2017-15715	6.8	https://vulners.com/cve/CVE-2017-15715
 <SNIP>
 ```
+
+Next: [[Performance]]
 

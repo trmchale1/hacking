@@ -1,3 +1,5 @@
+# Connect Scan
+
 
 The Nmap [TCP Connect Scan](https://nmap.org/book/scan-methods-connect-scan.html) (`-sT`) uses the #TCP three-way handshake to determine if a specific port on a target host is open or closed. The scan sends an `SYN` or #synchronize packet to the target port and waits for a response. It is considered open if the target port responds with an `SYN-ACK` #syncrchronize-acknowledge packet and closed if it responds with an `RST` or #reset packet.
 
@@ -20,11 +22,13 @@ PORT    STATE SERVICE REASON
 Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 ```
 
+## Filtered Ports
+
 When a port is shown as filtered, it can have several reasons. In most cases, firewalls have certain rules set to handle specific connections. The packets can either be `dropped`, or `rejected`. When a packet gets dropped, `Nmap` receives no response from our target, and by default, the retry rate (`--max-retries`) is set to 1. This means `Nmap` will resend the request to the target port to determine if the previous packet was not accidentally mishandled.
 
 Let us look at an example where the firewall `drops` the TCP packets we send for the port scan. Therefore we scan the TCP port **139**, which was already shown as filtered. To be able to track how our sent packets are handled, we deactivate the ICMP echo requests (`-Pn`), DNS resolution (`-n`), and ARP ping scan (`--disable-arp-ping`) again.
 
-  Connect Scan on TCP Port 443
+  ### Connect Scan on TCP Port 443
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -p 139 --packet-trace -n --disable-arp-ping -Pn
@@ -60,9 +64,20 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
 ```
 
+As a response, we receive an `ICMP` reply with `type 3` and `error code 3`, which indicates that the desired host is unreachable. Nevertheless, if we know that the host is alive, we can strongly assume that the firewall on this port is rejecting the packets, and we will have to take a closer look at this port later.
+
+## Discovering Open UDP Ports
+
 Some system administrators sometimes forget to filter the UDP ports in addition to the TCP ones. Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP. We do not receive any acknowledgment. Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
 
 Let's look at an example of what a UDP scan (`-sU`) can look like and what results it gives us.
+
+
+Some system administrators sometimes forget to filter the UDP ports in addition to the TCP ones. Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP. We do not receive any acknowledgment. Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
+
+Let's look at an example of what a UDP scan (`-sU`) can look like and what results it gives us.
+
+
 
 #### UDP Port Scan
 
@@ -88,7 +103,7 @@ Nmap done: 1 IP address (1 host up) scanned in 98.07 seconds
 
 Another disadvantage of this is that we often do not get a response back because `Nmap` sends empty datagrams to the scanned UDP ports, and we do not receive any response. So we cannot determine if the UDP packet has arrived at all or not. If the UDP port is `open`, we only get a response if the application is configured to do so.
 
-  UDP Port Scan
+If we get an ICMP response with `error code 3` (port unreachable), we know that the port is indeed `closed`.
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -sU -Pn -n --disable-arp-ping --packet-trace -p 137 --reason 
@@ -108,8 +123,6 @@ Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 
 If we get an ICMP response with `error code 3` (port unreachable), we know that the port is indeed `closed`.
 
-  UDP Port Scan
-
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -sU -Pn -n --disable-arp-ping --packet-trace -p 100 --reason 
 
@@ -127,8 +140,6 @@ Nmap done: 1 IP address (1 host up) scanned in  0.15 seconds
 ```
 
 For all other ICMP responses, the scanned ports are marked as (`open|filtered`).
-
-  UDP Port Scan
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -sU -Pn -n --disable-arp-ping --packet-trace -p 138 --reason 
@@ -182,3 +193,4 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 6.55 seconds
 ```
 
+Next: [[Saving nmap Results]]
