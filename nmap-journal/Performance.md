@@ -2,7 +2,7 @@
 
 ## Timeouts
 
-When Nmap sends a packet, it takes some time (`Round-Trip-Time` - `RTT`) to receive a response from the scanned port. Generally, `Nmap` starts with a high timeout (`--min-RTT-timeout`) of 100ms. Let us look at an example by scanning the whole network with 256 hosts, including the top 100 ports.
+When Nmap sends a packet, it takes some time (`Round-Trip-Time` - `RTT`) to receive a response from the scanned port. Generally, `Nmap` starts with a high #timeout (`--min-RTT-timeout`) of 100ms. Let us look at an example by scanning the whole network with 256 #hosts, including the top 100 ports.
 
 #### Default Scan
 
@@ -31,7 +31,7 @@ badgersec@htb[/htb]$ cat tnet.minrate300 | grep "/tcp" | wc -l
 
 ## Timing
 
-Because such settings cannot always be optimized manually, as in a black-box penetration test, `Nmap` offers six different timing templates (`-T <0-5>`) for us to use. These values (`0-5`) determine the aggressiveness of our scans. This can also have negative effects if the scan is too aggressive, and security systems may block us due to the produced network traffic. The default timing template used when we have defined nothing else is the normal (`-T 3`).
+Because such settings cannot always be optimized manually, as in a #black-box penetration test, `Nmap` offers six different timing templates (`-T <0-5>`) for us to use. These values (`0-5`) determine the aggressiveness of our scans. This can also have negative effects if the scan is too aggressive, and security systems may block us due to the produced network traffic. The default timing template used when we have defined nothing else is the normal (`-T 3`).
 
 -   `-T 0` / `-T paranoid`
 -   `-T 1` / `-T sneaky`
@@ -75,3 +75,6 @@ badgersec@htb[/htb]$ cat tnet.T5 | grep "/tcp" | wc -l
 
 23
 ```
+
+Next: [[Firewall and IDS IPS Evasion]]
+

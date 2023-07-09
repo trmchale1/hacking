@@ -38,7 +38,7 @@ badgersec@htb[/htb]$ sudo nmap <target> --script <category>
 badgersec@htb[/htb]$ sudo nmap <target> --script <script-name>,<script-name>,...
 ```
 
-For example, let us keep working with the target SMTP port and see the results we get with two defined scripts.
+For example, let us keep working with the target #SMTP port and see the results we get with two defined scripts.
 
 #### Nmap - Specifying Scripts
 
@@ -56,7 +56,7 @@ PORT   STATE SERVICE
 MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 ```
 
-We see that we can recognize the **Ubuntu** distribution of Linux by using the' banner' script. The `smtp-commands` script shows us which commands we can use by interacting with the target SMTP server. In this example, such information may help us to find out existing users on the target. `Nmap` also gives us the ability to scan our target with the aggressive option (`-A`). This scans the target with multiple options as service detection (`-sV`), OS detection (`-O`), traceroute (`--traceroute`), and with the default NSE scripts (`-sC`).
+We see that we can recognize the **Ubuntu** distribution of Linux by using the' banner' script. The `smtp-commands` script shows us which commands we can use by interacting with the target #SMTP server. In this example, such information may help us to find out existing users on the target. `Nmap` also gives us the ability to scan our target with the #aggressive option (`-A`). This scans the target with multiple options as service detection (`-sV`), OS detection (`-O`), #traceroute (`--traceroute`), and with the default NSE scripts (`-sC`).
 
 #### Nmap - Aggressive Scan
 
@@ -94,7 +94,7 @@ With the help of the used scan option (`-A`), we found out what kind of web serv
 
 ## Vulnerability Assessment
 
-Now let us move on to HTTP port 80 and see what information and vulnerabilities we can find using the `vuln` category from `NSE`.
+Now let us move on to #HTTP port 80 and see what information and #vulnerabilities we can find using the `vuln` category from `NSE`.
 
 #### Nmap - Vuln Category
 

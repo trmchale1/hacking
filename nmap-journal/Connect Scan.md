@@ -1,11 +1,11 @@
 # Connect Scan
 
 
-The Nmap [TCP Connect Scan](https://nmap.org/book/scan-methods-connect-scan.html) (`-sT`) uses the #TCP three-way handshake to determine if a specific port on a target host is open or closed. The scan sends an `SYN` or #synchronize packet to the target port and waits for a response. It is considered open if the target port responds with an `SYN-ACK` #syncrchronize-acknowledge packet and closed if it responds with an `RST` or #reset packet.
+The Nmap [TCP Connect Scan](https://nmap.org/book/scan-methods-connect-scan.html) (`-sT`) uses the #TCP three-way handshake to determine if a specific port on a target host is open or closed. The scan sends an `SYN` or #synchronize #packet to the target port and waits for a response. It is considered open if the target port responds with an `SYN-ACK` #syncrchronize-acknowledge packet and closed if it responds with an `RST` or #reset packet.
 
-The `Connect` scan is useful because it is the most accurate way to determine the state of a port, and it is also the most stealthy. Unlike other types of scans, such as the SYN scan, the #Connect (-sT) scan does not leave any unfinished connections or unsent packets on the target host, which makes it less likely to be detected by intrusion detection systems (IDS) or intrusion prevention systems (IPS). It is useful when we want to map the network and don't want to disturb the services running behind it, thus causing a minimal impact and sometimes considered a more polite scan method.
+The `Connect` scan is useful because it is the most accurate way to determine the state of a port, and it is also the most stealthy. Unlike other types of scans, such as the #SYN scan, the #Connect (-sT) scan does not leave any unfinished connections or unsent packets on the target host, which makes it less likely to be detected by intrusion detection systems (IDS) or intrusion prevention systems (IPS). It is useful when we want to map the network and don't want to disturb the services running behind it, thus causing a minimal impact and sometimes considered a more polite scan method.
 
-It is also useful when the target host has a personal firewall that drops incoming packets but allows outgoing packets. In this case, a Connect scan can bypass the firewall and accurately determine the state of the target ports. However, it is important to note that the Connect scan is slower than other types of scans because it requires the scanner to wait for a response from the target after each packet it sends, which could take some time if the target is busy or unresponsive.
+It is also useful when the target host has a personal #firewall that drops incoming #packets but allows outgoing packets. In this case, a Connect scan can bypass the firewall and accurately determine the state of the target ports. However, it is important to note that the #Connect scan is slower than other types of scans because it requires the scanner to wait for a response from the target after each packet it sends, which could take some time if the target is busy or unresponsive.
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -p 443 --packet-trace --disable-arp-ping -Pn -n --reason -sT 
@@ -24,9 +24,9 @@ Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 
 ## Filtered Ports
 
-When a port is shown as filtered, it can have several reasons. In most cases, firewalls have certain rules set to handle specific connections. The packets can either be `dropped`, or `rejected`. When a packet gets dropped, `Nmap` receives no response from our target, and by default, the retry rate (`--max-retries`) is set to 1. This means `Nmap` will resend the request to the target port to determine if the previous packet was not accidentally mishandled.
+When a port is shown as #filtered, it can have several reasons. In most cases, firewalls have certain rules set to handle specific connections. The packets can either be `dropped`, or `rejected`. When a packet gets dropped, `Nmap` receives no response from our target, and by default, the retry rate (`--max-retries`) is set to 1. This means `Nmap` will resend the request to the target port to determine if the previous packet was not accidentally mishandled.
 
-Let us look at an example where the firewall `drops` the TCP packets we send for the port scan. Therefore we scan the TCP port **139**, which was already shown as filtered. To be able to track how our sent packets are handled, we deactivate the ICMP echo requests (`-Pn`), DNS resolution (`-n`), and ARP ping scan (`--disable-arp-ping`) again.
+Let us look at an example where the firewall `drops` the TCP packets we send for the port scan. Therefore we scan the #TCP port **139**, which was already shown as filtered. To be able to track how our sent packets are handled, we deactivate the #ICMP echo requests (`-Pn`), #DNS resolution (`-n`), and #ARP ping scan (`--disable-arp-ping`) again.
 
   ### Connect Scan on TCP Port 443
 
@@ -46,7 +46,7 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 Nmap done: 1 IP address (1 host up) scanned in 2.06 seconds
 ```
 
-We see in the last scan that `Nmap` sent two TCP packets with the SYN flag. By the duration (`2.06s`) of the scan, we can recognize that it took much longer than the previous ones (`~0.05s`). The case is different if the firewall rejects the packets. For this, we look at TCP port `445`, which is handled accordingly by such a rule of the firewall.
+We see in the last scan that `Nmap` sent two TCP packets with the #SYN flag. By the duration (`2.06s`) of the scan, we can recognize that it took much longer than the previous ones (`~0.05s`). The case is different if the firewall rejects the packets. For this, we look at TCP port `445`, which is handled accordingly by such a rule of the firewall.
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -p 445 --packet-trace -n --disable-arp-ping -Pn
@@ -68,7 +68,7 @@ As a response, we receive an `ICMP` reply with `type 3` and `error code 3`,
 
 ## Discovering Open UDP Ports
 
-Some system administrators sometimes forget to filter the UDP ports in addition to the TCP ones. Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP. We do not receive any acknowledgment. Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
+Some system administrators sometimes forget to filter the #UDP ports in addition to the TCP ones. Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP. We do not receive any acknowledgment. Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
 
 Let's look at an example of what a UDP scan (`-sU`) can look like and what results it gives us.
 
@@ -101,9 +101,9 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 Nmap done: 1 IP address (1 host up) scanned in 98.07 seconds
 ```
 
-Another disadvantage of this is that we often do not get a response back because `Nmap` sends empty datagrams to the scanned UDP ports, and we do not receive any response. So we cannot determine if the UDP packet has arrived at all or not. If the UDP port is `open`, we only get a response if the application is configured to do so.
+Another disadvantage of this is that we often do not get a response back because `Nmap` sends empty datagrams to the scanned UDP ports, and we do not receive any response. So we cannot determine if the #UDP packet has arrived at all or not. If the UDP port is `open`, we only get a response if the application is configured to do so.
 
-If we get an ICMP response with `error code 3` (port unreachable), we know that the port is indeed `closed`.
+If we get an #ICMP response with `error code 3` (port unreachable), we know that the port is indeed `closed`.
 
 ```shell-session
 badgersec@htb[/htb]$ sudo nmap 10.129.2.28 -sU -Pn -n --disable-arp-ping --packet-trace -p 137 --reason 
