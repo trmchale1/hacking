@@ -47,16 +47,72 @@
             "id": "dde773effd7322d5",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "985677cf785b696d",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Connect Scan.md",
+                "file": "Saving nmap Results.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4f4c1d55f11351d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Service Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f95f862976cbe4e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nmap scripting engine.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "677e038a4cfb2b64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Performance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "819e198565b97347",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Firewall and IDS IPS Evasion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -122,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Connect Scan.md",
+                "file": "Firewall and IDS IPS Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Connect Scan.md",
+                "file": "Firewall and IDS IPS Evasion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Connect Scan.md"
+                "file": "Firewall and IDS IPS Evasion.md"
               }
             }
           }
@@ -183,12 +239,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dde773effd7322d5",
+  "active": "7ee9755b573e6f9f",
   "lastOpenFiles": [
-    "Host and Port Scanning.md",
+    "Performance.md",
+    "nmap scripting engine.md",
     "Intro to nmap --help.md",
+    "Host and Port Scanning.md",
+    "Connect Scan.md",
+    "Service Enumeration.md",
+    "Saving nmap Results.md",
     "Scan Network Range.md",
-    "TCP-SYN scan (-sS).md",
-    "Connect Scan.md"
+    "TCP-SYN scan (-sS).md"
   ]
 }

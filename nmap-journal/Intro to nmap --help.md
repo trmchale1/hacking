@@ -1,6 +1,6 @@
+# nmap --help
 
-
-Syntax for nmap: 
+Syntax for #nmap: 
 ```shell-session
 badgersec@htb[/htb]$ nmap <scan types> <options> <target>
 ```
