@@ -3,9 +3,9 @@
 
 To start, the #TCP-SYN scan (`-sS`) is one of the default settings unless we have defined otherwise and is also one of the most popular scan methods.
 
-- If our target sends an `SYN-ACK` flagged packet back to the scanned port, Nmap detects that the port is `open`.
--   If the packet receives an `RST` flag, it is an indicator that the port is `closed`.
--   If Nmap does not receive a packet back, it will display it as `filtered`. Depending on the firewall configuration, certain packets may be dropped or ignored by the firewall.
+- If our target sends an #SYN-ACK` flagged packet back to the scanned port, Nmap detects that the port is `open`.
+-   If the packet receives an #RST flag, it is an indicator that the port is `closed`.
+-   If Nmap does not receive a #packet back, it will display it as `filtered`. Depending on the #firewall configuration, certain packets may be dropped or ignored by the firewall.
 
 An example of #nmap using the -sS flag:
 
