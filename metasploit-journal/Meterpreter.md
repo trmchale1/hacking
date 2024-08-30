@@ -594,3 +594,5 @@ Secret  : _SC_WebClient / service 'WebClient' with username : NT AUTHORITY\Local
 ```
 
 From this point, if the machine was connected to a more extensive network, we could use this loot to pivot through the system, gain access to internal resources and impersonate users with a higher level of access if the overall security posture of the network is weak.
+
+Wait and see...
