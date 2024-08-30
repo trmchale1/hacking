@@ -20,4 +20,4 @@ level_three_pass=$(sshpass -p $pass_four ssh -p 2220 -o UserKnownHostsFile=/dev/
 # not executable
 
 
-echo $level_three_pass >> "pass.txt"
+echo $level_three_pass

@@ -15,4 +15,4 @@ SIX_SCRIPT='cat $(find ./ -type f -readable ! -executable -size 1033c)'
 
 level_six_pass=$(sshpass -p $pass_five ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit5@bandit.labs.overthewire.org "cd inhere && $SIX_SCRIPT")
 
-echo $level_six_pass >> "pass.txt"
+echo $level_six_pass
