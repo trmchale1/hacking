@@ -4,11 +4,7 @@ apt-get update
 apt-get install -y ssh
 apt-get install -y sshpass
 
-
-for LINE in $(cat pass.txt)
-do
-    pass_six=$LINE
-done
+pass_six="HWasnPhtq9AVKe0dmk45nxy20cvUa6EG"
 
 SEVEN_SCRIPT='cat $(find / -user bandit7 -group bandit6 -size 33c 2>/dev/null)'
 

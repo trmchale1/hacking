@@ -4,12 +4,7 @@ apt-get update
 apt-get install -y ssh
 apt-get install -y sshpass
 
-
-for LINE in $(cat pass.txt)
-do
-    pass_five=$LINE
-done
-
+pass_five="4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw"
 
 SIX_SCRIPT='cat $(find ./ -type f -readable ! -executable -size 1033c)'
 

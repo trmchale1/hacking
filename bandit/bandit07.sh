@@ -4,11 +4,7 @@ apt-get update
 apt-get install -y ssh
 apt-get install -y sshpass
 
-
-for LINE in $(cat pass.txt)
-do
-    pass_seven=$LINE
-done
+pass_seven="morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj"
 
 EIGHT_SCRIPT='grep millionth data.txt | cut -f 2'
 

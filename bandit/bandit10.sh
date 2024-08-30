@@ -4,11 +4,7 @@ apt-get update
 apt-get install -y ssh
 apt-get install -y sshpass
 
-
-for LINE in $(cat pass.txt)
-do
-    pass_nine=$LINE
-done
+pass_nine="FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey"
 
 ELEVEN_SCRIPT='base64 -d data.txt | cut -d " " -f 4'
 

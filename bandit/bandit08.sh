@@ -4,11 +4,7 @@ apt-get update
 apt-get install -y ssh
 apt-get install -y sshpass
 
-
-for LINE in $(cat pass.txt)
-do
-    pass_eight=$LINE
-done
+pass_eight="dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc"
 
 NINE_SCRIPT='sort data.txt | uniq -u'
 

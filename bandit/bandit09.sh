@@ -4,11 +4,7 @@ apt-get update
 apt-get install -y ssh
 apt-get install -y sshpass
 
-
-for LINE in $(cat pass.txt)
-do
-    pass_nine=$LINE
-done
+pass_nine="4CKMh1JI91bUIZZPXDqGanal4xvAg0JM"
 
 TEN_SCRIPT='strings data.txt | grep ========= | tail -1 | cut -d " " -f 2'
 
