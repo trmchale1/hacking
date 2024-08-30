@@ -7,12 +7,11 @@ apt-get install -y sshpass
 
 for LINE in $(cat pass.txt)
 do
-    pass_five=$LINE
+    pass_six=$LINE
 done
 
+SEVEN_SCRIPT='cat $(find / -user bandit7 -group bandit6 -size 33c 2>/dev/null)'
 
-SIX_SCRIPT='cat $(find ./ -type f -readable ! -executable -size 1033c)'
+level_seven_pass=$(sshpass -p $pass_six ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit6@bandit.labs.overthewire.org "$SEVEN_SCRIPT")
 
-level_six_pass=$(sshpass -p $pass_five ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit5@bandit.labs.overthewire.org "cd inhere && $SIX_SCRIPT")
-
-echo $level_six_pass
+echo $level_seven_pass

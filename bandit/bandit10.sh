@@ -10,10 +10,10 @@ do
     pass_nine=$LINE
 done
 
-TEN_SCRIPT='strings data.txt | grep ========= | tail -1 | cut -d " " -f 2'
+ELEVEN_SCRIPT='base64 -d data.txt | cut -d " " -f 4'
 
 
-level_ten_pass=$(sshpass -p $pass_nine ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit9@bandit.labs.overthewire.org "$TEN_SCRIPT")
+level_eleven_pass=$(sshpass -p $pass_nine ssh -p 2220 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X bandit10@bandit.labs.overthewire.org "$ELEVEN_SCRIPT")
 
 
-echo $level_ten_pass
+echo $level_eleven_pass
