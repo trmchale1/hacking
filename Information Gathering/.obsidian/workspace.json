@@ -1,110 +1,50 @@
 {
   "main": {
-    "id": "ef17425a0a1ed970",
+    "id": "16dbb58cc75d7bbe",
     "type": "split",
     "children": [
       {
-        "id": "129f10189114573b",
+        "id": "7237675af2f5538e",
         "type": "tabs",
         "children": [
           {
-            "id": "e754745af5de2512",
+            "id": "d326d13d09a34f64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumeration Principles.md",
+                "file": "Intro.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "09b909948c54703b",
+            "id": "ad38fa84036143ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumeration Methodology.md",
+                "file": "WHOIS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4985a3c83a2dc90d",
+            "id": "3bb2f897c93f9e18",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Domain Information.md",
+                "file": "Utilising WHOIS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7baac0647c17c619",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud Resources.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8078dfa4fcf1713",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FTP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "29e14605dccfef83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SMB.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1a03e87e9646c5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "scratch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "48f00700aff4d2e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "scratch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8eeea061eceed3a4",
+            "id": "409e992c21e6b6ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -116,139 +56,189 @@
             }
           },
           {
-            "id": "1b0449ce2b62f84e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
-          },
-          {
-            "id": "90675bbec6b7b4a4",
+            "id": "953452492c29dd05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SMTP.md",
+                "file": "Digging DNS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c8fc711298fe7938",
+            "id": "b22f338e8f12e01f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IMAP - POP3.md",
+                "file": "Subdomains.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d270437036af88fe",
+            "id": "cd39edb64ca259f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SNMP.md",
+                "file": "Subdomain Bruteforcing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c7dd4d71c3a3f9fb",
+            "id": "e75cae9d65809a37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MySQL.md",
+                "file": "DNS Zone Transfers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a2b22fe9ffd57058",
+            "id": "ba2de6011562aa39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MSSQL.md",
+                "file": "Virtual Hosts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2e2238843b1cdd26",
+            "id": "0b3617949935e8cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Oracle TNS.md",
+                "file": "Certificate Transparency Logs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "256cf7c9f704afd1",
+            "id": "bb7e6af5f8c0a9c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IPMI.md",
+                "file": "Fingerprinting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7ab27dcd1f97c4c3",
+            "id": "4a6d0f43299bf23e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Remote Management Protocols.md",
+                "file": "Crawling.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e9c06270c96456bb",
+            "id": "a5b2d9b45d50bbdc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scratch.md",
+                "file": "robots.txt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b305ffcd9d8dcfdc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Well-Known URIs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "33f5e4b2d0b7d7a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Creepy Crawlies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b87d0205f3b71c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Search Engine Discovery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c5d893b6b5e39894",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Archives.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86651ede17bc72b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Automating Recon.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 18
+        "currentTab": 17
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1f641abd18292d72",
+    "id": "f7435c27cbe3f911",
     "type": "split",
     "children": [
       {
-        "id": "126a7231fb48ca3f",
+        "id": "291c8f0aabf012c5",
         "type": "tabs",
         "children": [
           {
-            "id": "d2ea71efe0e9f4bf",
+            "id": "b51b4dbfc3dd8039",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -258,7 +248,7 @@
             }
           },
           {
-            "id": "e2b1449682764cd1",
+            "id": "a2cadbd6e0be5012",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -273,7 +263,7 @@
             }
           },
           {
-            "id": "d370b81890e9cdbd",
+            "id": "3e616b3548354bbb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -287,20 +277,20 @@
     "width": 300
   },
   "right": {
-    "id": "fbba9999dab2b551",
+    "id": "6bd8a2cdd1c59d5a",
     "type": "split",
     "children": [
       {
-        "id": "88b96f98784650d5",
+        "id": "1e7cefac7e0ebdf8",
         "type": "tabs",
         "children": [
           {
-            "id": "5f07ff7daee3eece",
+            "id": "f464c5782204b24a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Enumeration Principles.md",
+                "file": "Automating Recon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -312,19 +302,19 @@
             }
           },
           {
-            "id": "eb31ff5815d51b7b",
+            "id": "f574dbb666dcf033",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Enumeration Principles.md",
+                "file": "Automating Recon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "afcf8f7f26698293",
+            "id": "93ffe72c90033454",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -335,12 +325,12 @@
             }
           },
           {
-            "id": "bd872a93a6d0804f",
+            "id": "d6b8f34c982b725b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Enumeration Principles.md"
+                "file": "Automating Recon.md"
               }
             }
           }
@@ -361,26 +351,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2ea71efe0e9f4bf",
+  "active": "86651ede17bc72b5",
   "lastOpenFiles": [
-    "Windows Remote Management Protocols.md",
-    "Linux Remote Management Protocols.md",
-    "IPMI.md",
-    "Oracle TNS.md",
-    "MSSQL.md",
-    "MySQL.md",
-    "scratch.md",
-    "SNMP.md",
-    "IMAP - POP3.md",
-    "SMTP.md",
+    "Web Archives.md",
+    "Automating Recon.md",
+    "Search Engine Discovery.md",
+    "Creepy Crawlies.md",
+    "Well-Known URIs.md",
+    "robots.txt.md",
+    "Crawling.md",
+    "Fingerprinting.md",
+    "Certificate Transparency Logs.md",
+    "Virtual Hosts.md",
+    "DNS Zone Transfers.md",
+    "Subdomain Bruteforcing.md",
+    "Subdomains.md",
+    "Digging DNS.md",
     "DNS.md",
-    "NFS.md",
-    "SMB.md",
-    "FTP.md",
-    "Cloud Resources.md",
-    "Domain Information.md",
-    "Enumeration Methodology.md",
-    "Enumeration Principles.md",
+    "Utilising WHOIS.md",
+    "WHOIS.md",
+    "Intro.md",
     "Welcome.md"
   ]
 }
