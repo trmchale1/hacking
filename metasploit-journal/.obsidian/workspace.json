@@ -8,91 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "94f80c0a8afe5459",
+            "id": "f243a84dca6ecc76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "metasploit-intro.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5bd4da0b580eb835",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "89773b7ff096f137",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca9b8452e9b43035",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Targets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c048af5277c3dfce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Payloads.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "310c539cf3eb64ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sessions & Jobs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d943d66fd41e23a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meterpreter.md",
+                "file": "msf scratch.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "2f846c5fc99a55d8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -158,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meterpreter.md",
+                "file": "msf scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meterpreter.md",
+                "file": "msf scratch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meterpreter.md"
+                "file": "msf scratch.md"
               }
             }
           }
@@ -219,11 +154,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d943d66fd41e23a5",
+  "active": "f243a84dca6ecc76",
   "lastOpenFiles": [
+    "Targets.md",
+    "msf scratch.md",
+    "Meterpreter.md",
     "Sessions & Jobs.md",
     "Payloads.md",
-    "Targets.md",
     "Modules.md",
     "metasploit-intro.md",
     "Morning Notes.md"

@@ -1,4 +1,13 @@
-# nmap --help
+# nmap
+
+Network Mapper is an open-source network analysis and security auditing tool written in C and Python. It is designed to scan networks and identify which hosts are available using raw packets. Nmap can identify services, applications, versions, and operating systems. Can determine packet filters, firewalls, or intrusion detection systems.
+
+- Host discovery
+- Port Scanning
+- Service enumeration and detection
+- OS detection
+- Scriptable interaction with the target service
+
 
 Syntax for #nmap: 
 ```shell-session
