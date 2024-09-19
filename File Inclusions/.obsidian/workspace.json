@@ -1,244 +1,148 @@
 {
   "main": {
-    "id": "16dbb58cc75d7bbe",
+    "id": "b4cae19cd86d8457",
     "type": "split",
     "children": [
       {
-        "id": "7237675af2f5538e",
+        "id": "ac48acf145f6f05a",
         "type": "tabs",
         "children": [
           {
-            "id": "d326d13d09a34f64",
+            "id": "c0c3ced6540d4550",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro.md",
+                "file": "Intro to File Inclusions.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ad38fa84036143ac",
+            "id": "ed7df955d7299a86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WHOIS.md",
+                "file": "Local File Inclusion (LFI).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3bb2f897c93f9e18",
+            "id": "4f27376d09204e1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Utilising WHOIS.md",
+                "file": "Basic Bypasses.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "409e992c21e6b6ad",
+            "id": "e91e08e1019e2671",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DNS.md",
+                "file": "PHP Filters.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "953452492c29dd05",
+            "id": "07af7859951a53af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Digging DNS.md",
+                "file": "PHP Wrappers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b22f338e8f12e01f",
+            "id": "f7eee4fc8db4fe34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Subdomains.md",
+                "file": "Remote File Inclusion (RFI).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cd39edb64ca259f0",
+            "id": "4d23ff670072ce39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Subdomain Bruteforcing.md",
+                "file": "LFI and File Uploads.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e75cae9d65809a37",
+            "id": "5700c2459c7f087f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DNS Zone Transfers.md",
+                "file": "Log Poisoning.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ba2de6011562aa39",
+            "id": "e5d22468c5031956",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtual Hosts.md",
+                "file": "Automated Scanning.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0b3617949935e8cb",
+            "id": "36c5b6e26cb2f72a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Certificate Transparency Logs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb7e6af5f8c0a9c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fingerprinting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a6d0f43299bf23e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Crawling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a5b2d9b45d50bbdc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "robots.txt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b305ffcd9d8dcfdc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Well-Known URIs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "33f5e4b2d0b7d7a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Creepy Crawlies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3b87d0205f3b71c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Search Engine Discovery.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5d893b6b5e39894",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web Archives.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "86651ede17bc72b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Search Engine Discovery.md",
+                "file": "File Inclusion Prevention.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 17
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f7435c27cbe3f911",
+    "id": "3352ee6a6bdbf5dc",
     "type": "split",
     "children": [
       {
-        "id": "291c8f0aabf012c5",
+        "id": "c209cd90c001b014",
         "type": "tabs",
         "children": [
           {
-            "id": "b51b4dbfc3dd8039",
+            "id": "4d4a87177f54d049",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -248,7 +152,7 @@
             }
           },
           {
-            "id": "a2cadbd6e0be5012",
+            "id": "cded816d17e52b83",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -263,7 +167,7 @@
             }
           },
           {
-            "id": "3e616b3548354bbb",
+            "id": "106d8fe53dd35261",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -277,20 +181,20 @@
     "width": 300
   },
   "right": {
-    "id": "6bd8a2cdd1c59d5a",
+    "id": "5850a9bab6dee6d4",
     "type": "split",
     "children": [
       {
-        "id": "1e7cefac7e0ebdf8",
+        "id": "9625c74c8d373e72",
         "type": "tabs",
         "children": [
           {
-            "id": "f464c5782204b24a",
+            "id": "2c9653ee92927c80",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Search Engine Discovery.md",
+                "file": "File Inclusion Prevention.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -302,19 +206,19 @@
             }
           },
           {
-            "id": "f574dbb666dcf033",
+            "id": "626c7bced2405f55",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Search Engine Discovery.md",
+                "file": "File Inclusion Prevention.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "93ffe72c90033454",
+            "id": "7f641397b49dfa68",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -325,12 +229,12 @@
             }
           },
           {
-            "id": "d6b8f34c982b725b",
+            "id": "f8cd93c916498378",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Search Engine Discovery.md"
+                "file": "File Inclusion Prevention.md"
               }
             }
           }
@@ -351,26 +255,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86651ede17bc72b5",
+  "active": "36c5b6e26cb2f72a",
   "lastOpenFiles": [
-    "Intro.md",
-    "Subdomain Bruteforcing.md",
-    "Automating Recon.md",
-    "Fingerprinting.md",
-    "Virtual Hosts.md",
-    "Crawling.md",
-    "Web Archives.md",
-    "Search Engine Discovery.md",
-    "Creepy Crawlies.md",
-    "Well-Known URIs.md",
-    "robots.txt.md",
-    "Certificate Transparency Logs.md",
-    "DNS Zone Transfers.md",
-    "Subdomains.md",
-    "Digging DNS.md",
-    "DNS.md",
-    "Utilising WHOIS.md",
-    "WHOIS.md",
+    "Automated Scanning.md",
+    "File Inclusion Prevention.md",
+    "Log Poisoning.md",
+    "LFI and File Uploads.md",
+    "Remote File Inclusion (RFI).md",
+    "PHP Wrappers.md",
+    "PHP Filters.md",
+    "Basic Bypasses.md",
+    "Local File Inclusion (LFI).md",
+    "Intro to File Inclusions.md",
     "Welcome.md"
   ]
 }
