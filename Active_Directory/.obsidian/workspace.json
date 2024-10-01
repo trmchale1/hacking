@@ -434,7 +434,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardening Active Directory.md",
+                "file": "Active Directory Enumeration and Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -451,7 +451,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardening Active Directory.md",
+                "file": "Active Directory Enumeration and Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -474,7 +474,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardening Active Directory.md"
+                "file": "Active Directory Enumeration and Attacks.md"
               }
             }
           }

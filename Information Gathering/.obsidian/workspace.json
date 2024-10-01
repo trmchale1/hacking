@@ -217,7 +217,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Search Engine Discovery.md",
+                "file": "Creepy Crawlies.md",
                 "mode": "source",
                 "source": false
               }
@@ -290,7 +290,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Search Engine Discovery.md",
+                "file": "Creepy Crawlies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,7 +307,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Search Engine Discovery.md",
+                "file": "Creepy Crawlies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -330,7 +330,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Search Engine Discovery.md"
+                "file": "Creepy Crawlies.md"
               }
             }
           }
@@ -353,14 +353,14 @@
   },
   "active": "86651ede17bc72b5",
   "lastOpenFiles": [
-    "Intro.md",
-    "Subdomain Bruteforcing.md",
-    "Automating Recon.md",
-    "Fingerprinting.md",
     "Virtual Hosts.md",
     "Crawling.md",
-    "Web Archives.md",
+    "Automating Recon.md",
     "Search Engine Discovery.md",
+    "Intro.md",
+    "Subdomain Bruteforcing.md",
+    "Fingerprinting.md",
+    "Web Archives.md",
     "Creepy Crawlies.md",
     "Well-Known URIs.md",
     "robots.txt.md",
