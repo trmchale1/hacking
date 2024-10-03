@@ -1,39 +1,64 @@
 {
   "main": {
-    "id": "1a5a6f4f3b58d9f8",
+    "id": "35ceb08b537ff621",
     "type": "split",
     "children": [
       {
-        "id": "90b757fcee5c4854",
+        "id": "5f2f7c471aba2e5a",
         "type": "tabs",
         "children": [
           {
-            "id": "4e88b1eea311658b",
+            "id": "a0976d7da3821c55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinPEAS.md",
+                "file": "BoardLight.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76a9798ab7996331",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BoardLight.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d669fa7bc588d349",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BoardLight.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "76a7097dfa5ecb2b",
+    "id": "b37ef3f6add33498",
     "type": "split",
     "children": [
       {
-        "id": "790171d62db5a8ea",
+        "id": "7109da0637df5b10",
         "type": "tabs",
         "children": [
           {
-            "id": "dd709c36b2b21785",
+            "id": "7576cec7e3a8235d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +68,7 @@
             }
           },
           {
-            "id": "ce656a94839d52b6",
+            "id": "fc8abeb87f7a75a3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +83,7 @@
             }
           },
           {
-            "id": "edbb825a4b246b3d",
+            "id": "d71c212ad6e91fb8",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +94,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "a8bb7156c13b1f23",
+    "id": "e6f1c3434ac4f4a1",
     "type": "split",
     "children": [
       {
-        "id": "5c7b506f43a29cb2",
+        "id": "3a085dc782720683",
         "type": "tabs",
         "children": [
           {
-            "id": "ac3193e93880b185",
+            "id": "9938f961ec1a9310",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LinPEAS.md",
+                "file": "BoardLight.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +122,19 @@
             }
           },
           {
-            "id": "6fd49882315267e2",
+            "id": "264320baa0760ffe",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LinPEAS.md",
+                "file": "BoardLight.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "eb4414630297942f",
+            "id": "238046a3051f1c9b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +145,12 @@
             }
           },
           {
-            "id": "29c2db206f65d714",
+            "id": "f81843ce65c01b0a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "LinPEAS.md"
+                "file": "BoardLight.md"
               }
             }
           }
@@ -146,25 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e88b1eea311658b",
+  "active": "d669fa7bc588d349",
   "lastOpenFiles": [
-    "msfvenom.md",
-    "Adding to hosts file.md",
-    "john.md",
-    "PHP.md",
-    "Evil-WinRM.md",
-    "Responder.md",
-    "nmap.md",
-    "SMB.md",
-    "To do.md",
-    "LinPEAS.md",
-    "gobuster.md",
-    "Bind Shells.md",
-    "Hydra.md",
-    "RDP.md",
-    "Rsync.md",
-    "Untitled",
-    "SMB",
+    "Cap.md",
+    "BoardLight.md",
+    "Interview Notes.md",
+    "Lame.md",
     "Welcome.md"
   ]
 }

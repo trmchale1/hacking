@@ -1,2 +1,1 @@
-- review all the writeups in starting point and take notes in cheat sheet and also write up a gist with your learnings
-- move on to retired machines in guided mode
+
