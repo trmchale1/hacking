@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BoardLight.md",
+                "file": "Cap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31a860165b969d0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knife.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "e6f1c3434ac4f4a1",
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BoardLight.md",
+                "file": "Knife.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BoardLight.md",
+                "file": "Knife.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BoardLight.md"
+                "file": "Knife.md"
               }
             }
           }
@@ -171,9 +183,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d669fa7bc588d349",
+  "active": "31a860165b969d0c",
   "lastOpenFiles": [
     "Cap.md",
+    "Knife.md",
     "BoardLight.md",
     "Interview Notes.md",
     "Lame.md",

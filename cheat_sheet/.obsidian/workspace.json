@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinPEAS.md",
+                "file": "Adding to hosts file.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LinPEAS.md",
+                "file": "Adding to hosts file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LinPEAS.md",
+                "file": "Adding to hosts file.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LinPEAS.md"
+                "file": "Adding to hosts file.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "4e88b1eea311658b",
   "lastOpenFiles": [
+    "LinPEAS.md",
     "msfvenom.md",
     "Adding to hosts file.md",
     "john.md",
@@ -157,7 +158,6 @@
     "nmap.md",
     "SMB.md",
     "To do.md",
-    "LinPEAS.md",
     "gobuster.md",
     "Bind Shells.md",
     "Hydra.md",
