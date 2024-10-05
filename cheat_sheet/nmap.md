@@ -16,7 +16,11 @@ Script Scanning and version detection, this is the most intrusive nmap scan, wit
 sudo nmap -sC -sV {target_ip}
 ```
 
+Scan all ports, super fast
 
+```
+nmap -p- --min-rate=1000 -T4 {target_ip}
+```
 
 
 
