@@ -8,127 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a0976d7da3821c55",
+            "id": "2b22cea947ec8694",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BoardLight.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76a9798ab7996331",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BoardLight.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d669fa7bc588d349",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31a860165b969d0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Knife.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e19e5a75926b6a37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wifinetic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15ed7af704f33483",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BoardLight.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83f9f408eb705dc5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Broker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db6af56122b001b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Headless.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55aa71ff2ebe683d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sau.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "02df217e2fd7ccea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CozyHosting.md",
+                "file": "Blocky.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CozyHosting.md",
+                "file": "Blocky.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CozyHosting.md",
+                "file": "Blocky.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CozyHosting.md"
+                "file": "Blocky.md"
               }
             }
           }
@@ -255,19 +146,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "02df217e2fd7ccea",
+  "active": "2b22cea947ec8694",
   "lastOpenFiles": [
-    "Sau.md",
+    "Bashed.md",
     "CozyHosting.md",
+    "Sau.md",
     "Headless.md",
-    "BoardLight.md",
     "Broker.md",
+    "BoardLight.md",
+    "Wifinetic.md",
+    "Knife.md",
     "Cap.md",
+    "Blocky.md",
     "Devvortex.md",
     "Interview Notes.md",
-    "Knife.md",
     "Lame.md",
-    "Wifinetic.md",
     "Welcome.md"
   ]
 }

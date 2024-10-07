@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Adding to hosts file.md",
+                "file": "gobuster.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Adding to hosts file.md",
+                "file": "gobuster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Adding to hosts file.md",
+                "file": "gobuster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Adding to hosts file.md"
+                "file": "gobuster.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "4e88b1eea311658b",
   "lastOpenFiles": [
+    "Adding to hosts file.md",
     "Bind Shells.md",
     "nmap.md",
     "gobuster.md",
-    "Adding to hosts file.md",
     "Hydra.md",
     "LinPEAS.md",
     "msfvenom.md",
