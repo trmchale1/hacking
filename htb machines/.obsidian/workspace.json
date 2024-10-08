@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "784a6b7fcba5d478",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Codify.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Notes.md",
+                "file": "Codify.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview Notes.md",
+                "file": "Codify.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Notes.md"
+                "file": "Codify.md"
               }
             }
           }
@@ -146,8 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b22cea947ec8694",
+  "active": "784a6b7fcba5d478",
   "lastOpenFiles": [
+    "Interview Notes.md",
+    "Codify.md",
     "Blocky.md",
     "Bashed.md",
     "CozyHosting.md",
@@ -159,7 +174,6 @@
     "Knife.md",
     "Cap.md",
     "Devvortex.md",
-    "Interview Notes.md",
     "Lame.md",
     "Welcome.md"
   ]
