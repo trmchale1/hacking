@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gobuster.md",
+                "file": "nmap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84cdc3b8b0d7d012",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Adding to hosts file.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gobuster.md",
+                "file": "Adding to hosts file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "gobuster.md",
+                "file": "Adding to hosts file.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "gobuster.md"
+                "file": "Adding to hosts file.md"
               }
             }
           }
@@ -146,12 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e88b1eea311658b",
+  "active": "84cdc3b8b0d7d012",
   "lastOpenFiles": [
-    "Adding to hosts file.md",
-    "Bind Shells.md",
     "nmap.md",
     "gobuster.md",
+    "Ffuf.md",
+    "Adding to hosts file.md",
+    "Bind Shells.md",
     "Hydra.md",
     "LinPEAS.md",
     "msfvenom.md",

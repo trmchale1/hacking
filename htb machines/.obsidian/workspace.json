@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blocky.md",
+                "file": "Interview Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blocky.md",
+                "file": "Interview Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blocky.md",
+                "file": "Interview Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blocky.md"
+                "file": "Interview Notes.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "2b22cea947ec8694",
   "lastOpenFiles": [
+    "Blocky.md",
     "Bashed.md",
     "CozyHosting.md",
     "Sau.md",
@@ -157,7 +158,6 @@
     "Wifinetic.md",
     "Knife.md",
     "Cap.md",
-    "Blocky.md",
     "Devvortex.md",
     "Interview Notes.md",
     "Lame.md",
