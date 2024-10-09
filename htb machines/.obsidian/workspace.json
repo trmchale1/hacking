@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f79e7dabbe0b88fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mirai.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Codify.md",
+                "file": "Mirai.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Codify.md",
+                "file": "Mirai.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Codify.md"
+                "file": "Mirai.md"
               }
             }
           }
@@ -159,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "784a6b7fcba5d478",
+  "active": "f79e7dabbe0b88fd",
   "lastOpenFiles": [
-    "Interview Notes.md",
     "Codify.md",
+    "Mirai.md",
+    "Interview Notes.md",
     "Blocky.md",
     "Bashed.md",
     "CozyHosting.md",
