@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "f79e7dabbe0b88fd",
+            "id": "0c89e343abb7c321",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mirai.md",
+                "file": "Nibbles.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mirai.md",
+                "file": "Nibbles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mirai.md",
+                "file": "Nibbles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mirai.md"
+                "file": "Nibbles.md"
               }
             }
           }
@@ -171,9 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f79e7dabbe0b88fd",
+  "active": "0c89e343abb7c321",
   "lastOpenFiles": [
     "Codify.md",
+    "Nibbles.md",
     "Mirai.md",
     "Interview Notes.md",
     "Blocky.md",
