@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Better Shell.md",
+                "file": "gobuster.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f79a91795bb0b775",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "feroxbuster.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Better Shell.md",
+                "file": "feroxbuster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Better Shell.md",
+                "file": "feroxbuster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Better Shell.md"
+                "file": "feroxbuster.md"
               }
             }
           }
@@ -171,14 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50eb2ef0ee12e0f0",
+  "active": "f79a91795bb0b775",
   "lastOpenFiles": [
     "Adding to hosts file.md",
+    "nmap.md",
+    "To do.md",
+    "gobuster.md",
+    "feroxbuster.md",
     "Better Shell.md",
     "Ffuf.md",
-    "nmap.md",
     "Evil-WinRM.md",
-    "gobuster.md",
     "Bind Shells.md",
     "Hydra.md",
     "LinPEAS.md",
@@ -187,7 +201,6 @@
     "PHP.md",
     "Responder.md",
     "SMB.md",
-    "To do.md",
     "RDP.md",
     "Rsync.md",
     "Untitled",
