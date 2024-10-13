@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "0c89e343abb7c321",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nibbles.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5a7e7db861a66a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perfection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e8c96720751911a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knife.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "598bc27917864084",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,33 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "b3837a11326e188e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Codify.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c08c5c8a2f776593",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Codify.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Codify.md",
+                "file": "Knife.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Codify.md",
+                "file": "Knife.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Codify.md"
+                "file": "Knife.md"
               }
             }
           }
@@ -207,8 +171,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c08c5c8a2f776593",
+  "active": "e8c96720751911a6",
   "lastOpenFiles": [
+    "Codify.md",
+    "Knife.md",
+    "Screenshot 2024-10-13 at 5.28.32 PM.png",
+    "Screenshot 2024-10-13 at 5.28.08 PM.png",
+    "Screenshot 2024-10-13 at 5.08.53 PM.png",
+    "Screenshot 2024-10-13 at 5.07.47 PM.png",
+    "Two Million.md",
+    "Perfection.md",
+    "Lame.md",
+    "Mirai.md",
+    "Nibbles.md",
+    "Sau.md",
+    "Wifinetic.md",
+    "Headless.md",
+    "Devvortex.md",
+    "CozyHosting.md",
     "Cap.md",
     "Broker.md",
     "BoardLight.md",
@@ -216,18 +196,6 @@
     "Blocky.md",
     "Bizness.md",
     "Bashed.md",
-    "Codify.md",
-    "CozyHosting.md",
-    "Devvortex.md",
-    "Headless.md",
-    "Knife.md",
-    "Two Million.md",
-    "Wifinetic.md",
-    "Sau.md",
-    "Perfection.md",
-    "Nibbles.md",
-    "Mirai.md",
-    "Lame.md",
     "Screenshot 2024-10-13 at 1.10.58 PM.png",
     "Interview Notes.md",
     "Welcome.md"

@@ -1,6 +1,6 @@
 *Review this and add more info and put in resume*
 
-We start with nmap:
+We start with `nmap`:
 
 ```
 nmap -sV -sC {ip address}
