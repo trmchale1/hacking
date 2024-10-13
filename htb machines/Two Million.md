@@ -1,3 +1,5 @@
+*Add details and images, then add to resume*
+
 Running `nmap`, there are two ports open, 22, and 80 running ssh and http respectively. 
 
 When I visit the target ip, I find the url is called `2million.htb`. I add this url to the hosts list,

@@ -1,3 +1,5 @@
+*Review this and add more info and put in resume*
+
 We start with nmap:
 
 ```

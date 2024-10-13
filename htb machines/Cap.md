@@ -1,3 +1,5 @@
+*Not finished*
+
 We start with nmap
 ```
 nmap -sC -sV {victim ip}

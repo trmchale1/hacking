@@ -1,3 +1,4 @@
+*Add more details and put on resume*
 
 ```
 nmap -sC -sV {victim ip}
