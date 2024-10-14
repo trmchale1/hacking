@@ -1,4 +1,4 @@
-*Not finished*
+
 
 Firstly, the Apache ActiveMQ is on a port which is not grabbed by my standard nmap command:
 
@@ -102,5 +102,5 @@ $ssh -i root root@localhost
 
 $whoami
 root
-
 ```
+I can get the root flag by running `cat /root/root.txt` 

