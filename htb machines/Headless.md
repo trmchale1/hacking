@@ -1,4 +1,3 @@
-*Not finished*
 
 We run nmap and find that port 5000 is open.
 

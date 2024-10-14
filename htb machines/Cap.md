@@ -1,4 +1,3 @@
-*Not finished*
 
 We start with nmap
 ```
