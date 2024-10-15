@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cb516a78f3363b2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grandpa.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jerry.md",
+                "file": "Grandpa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jerry.md",
+                "file": "Grandpa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jerry.md"
+                "file": "Grandpa.md"
               }
             }
           }
@@ -195,8 +207,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "167a1f7c25184788",
+  "active": "cb516a78f3363b2e",
   "lastOpenFiles": [
+    "Jerry.md",
+    "Grandpa.md",
     "Headless.md",
     "Devvortex.md",
     "CozyHosting.md",
@@ -210,7 +224,6 @@
     "Bashed.md",
     "Precious.md",
     "Photobomb.md",
-    "Jerry.md",
     "Legacy.md",
     "Wifinetic.md",
     "Sau.md",
