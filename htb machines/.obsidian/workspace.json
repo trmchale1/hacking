@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fc5a9eaf0097aff4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sauna.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Forest.md",
+                "file": "Sauna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Forest.md",
+                "file": "Sauna.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Forest.md"
+                "file": "Sauna.md"
               }
             }
           }
@@ -159,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "73671cbffbf1c0f6",
+  "active": "fc5a9eaf0097aff4",
   "lastOpenFiles": [
-    "Two Million.md",
     "Forest.md",
+    "Sauna.md",
+    "Two Million.md",
     "Blue.md",
     "Codify.md",
     "Cap.md",
@@ -186,7 +199,6 @@
     "Perfection.md",
     "Nibbles.md",
     "Mirai.md",
-    "Lame.md",
     "Screenshot 2024-10-13 at 5.28.32 PM.png",
     "Screenshot 2024-10-13 at 5.28.08 PM.png",
     "Screenshot 2024-10-13 at 5.08.53 PM.png",
