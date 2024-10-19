@@ -1,21 +1,14 @@
 - update timmchale.co to include spaces and improve readability, add notes about learnings and tools from linux
 
-- Around 60 incomplete boxes in the lab's to do list, do at least one lab and one writeup per day
+- Around 30 incomplete boxes in the lab's to do list, do at least one lab and one writeup per day
 
 ### Academy Review
 
-- In the academy review, "Shells and Payloads" - very clear notes on how to get a shell
-- "Information gathering" - specifically how to get info on DNS
-- for "File Transfers" - know a favorite way of getting files from your local to an attacking box 
-- "passwords" - notes on using hashcat and john the ripper
-- "Active Directory" - more research *important*
-- "Web Attacks" - more research
-- "SQL Injection" - more research *important*
-- "XSS Cross-Site Scripting" - more research *important*
-- "File Inclusion" - more research
-- "File Upload" - more research
-- "Command Injections" - more research *important*
-- "Linux/Windows Priv Escalation" - research *important*
+- To get a shell, review notes on the boxes you've hacked
+- "passwords" - Go through the boxes you've hacked for different flags for hashcat
+- "Active Directory" - There are some 3rd party tools, used in your hacks that would be useful to take notes on, cross-check with the academy, especially later modules used in advanced hacks, ignore powershell commands
+- "XSS Cross-Site Scripting" - more research *important*, actually use the academy for this
+- "Linux/Windows Priv Escalation" - research *important*, good information in here
 
 Can you do "Attacking Enterprise Networks" blind? If so, sit for the exam.
 
