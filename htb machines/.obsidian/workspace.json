@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5f2f7c471aba2e5a",
+        "id": "31626ce5523f4944",
         "type": "tabs",
         "children": [
           {
-            "id": "086082637eef3c3d",
+            "id": "d0062e472f74920f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Two Million.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "73671cbffbf1c0f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Forest.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc5a9eaf0097aff4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "062a8449cecc0f5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Access.md",
+                "file": "Cronos.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Access.md",
+                "file": "Cronos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Access.md",
+                "file": "Cronos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Access.md"
+                "file": "Cronos.md"
               }
             }
           }
@@ -183,34 +146,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "062a8449cecc0f5a",
+  "active": "d0062e472f74920f",
   "lastOpenFiles": [
+    "Cronos.md",
+    "Wifinetic.md",
     "Active.md",
-    "Access.md",
-    "Sauna.md",
-    "Legacy.md",
     "Forest.md",
     "Two Million.md",
-    "Blue.md",
+    "Sauna.md",
+    "Sau.md",
+    "Precious.md",
+    "Photobomb.md",
+    "Perfection.md",
+    "Nibbles.md",
+    "Mirai.md",
+    "Legacy.md",
+    "Lame.md",
+    "Knife.md",
+    "Jerry.md",
+    "Headless.md",
+    "Granny.md",
+    "Grandpa.md",
+    "Devvortex.md",
+    "CozyHosting.md",
     "Codify.md",
     "Cap.md",
     "Broker.md",
     "BoardLight.md",
-    "Blocky.md",
-    "Bizness.md",
-    "Bashed.md",
-    "Granny.md",
-    "Grandpa.md",
-    "Jerry.md",
-    "Photobomb.md",
-    "Headless.md",
-    "Devvortex.md",
-    "CozyHosting.md",
-    "Precious.md",
-    "Wifinetic.md",
-    "Sau.md",
-    "Perfection.md",
-    "Nibbles.md",
+    "Blue.md",
     "Screenshot 2024-10-13 at 5.28.32 PM.png",
     "Screenshot 2024-10-13 at 5.28.08 PM.png",
     "Screenshot 2024-10-13 at 5.08.53 PM.png",

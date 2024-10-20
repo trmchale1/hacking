@@ -30,3 +30,9 @@ A wordlist to use during brute force attacks:
 git clone https://github.com/danielmiessler/SecLists.git
 ```
 
+subdomains:
+
+```
+$ gobuster dir -u <url> -w <wordlist>
+```
+
