@@ -13,3 +13,10 @@
 Can you do "Attacking Enterprise Networks" blind? If so, sit for the exam.
 
 Try Pro Labs Dante and Zephyr.
+
+Boxes to avoid as exploits are broken:
+```
+beep
+keeper
+valentine
+```

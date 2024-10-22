@@ -22,5 +22,21 @@ Scan all ports, super fast
 nmap -p- --min-rate=1000 -T4 {target_ip}
 ```
 
+CVE detection:
+
+```
+nmap -Pn --script vuln 192.168.1.105
+```
+
+Scan TCP:
+```
+nmap -sT
+```
+
+Scan UDP:
+```
+nmap -sU
+```
+
 
 
