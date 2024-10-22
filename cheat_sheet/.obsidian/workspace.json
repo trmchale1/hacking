@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Better Shell.md",
+                "file": "Adding to hosts file.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f359f2451ba66e8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SQLMap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f4b3563a5056b55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "feroxbuster.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Better Shell.md",
+                "file": "feroxbuster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Better Shell.md",
+                "file": "feroxbuster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Better Shell.md"
+                "file": "feroxbuster.md"
               }
             }
           }
@@ -159,24 +183,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e11d91177108ec88",
+  "active": "0f4b3563a5056b55",
   "lastOpenFiles": [
+    "Adding to hosts file.md",
+    "Priv Esc Linux.md",
+    "SQLMap.md",
+    "Untitled",
+    "gobuster.md",
+    "feroxbuster.md",
+    "Better Shell.md",
     "nmap.md",
     "To do.md",
     "Bind Shells.md",
-    "Adding to hosts file.md",
     "DNS.md",
-    "gobuster.md",
     "Ffuf.md",
     "Active Directory.md",
     "Access.md",
     "Windows Commands.md",
     "SMB.md",
-    "Better Shell.md",
     "LDAP.md",
     "RDP.md",
     "Evil-WinRM.md",
-    "feroxbuster.md",
     "Hydra.md",
     "LinPEAS.md",
     "msfvenom.md",
@@ -184,7 +211,6 @@
     "PHP.md",
     "Responder.md",
     "Rsync.md",
-    "Untitled",
     "SMB",
     "Welcome.md"
   ]

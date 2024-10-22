@@ -7,3 +7,4 @@ echo "10.129.227.248 thetoppers.htb" | sudo tee -a /etc/hosts
 ```
 echo "{target_ip} ignition.htb" | sudo tee -a /etc/hosts
 ```
+
