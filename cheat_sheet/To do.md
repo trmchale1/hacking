@@ -1,6 +1,6 @@
 - update timmchale.co to include spaces and improve readability, add notes about learnings and tools from linux
 
-- Around 30 incomplete boxes in the lab's to do list, do at least one lab and one writeup per day
+- Around 41 incomplete boxes in the lab's to do list, do at least one lab and one writeup per day
 
 ### Academy Review
 
