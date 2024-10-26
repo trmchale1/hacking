@@ -36,3 +36,8 @@ subdomains:
 $ gobuster dir -u <url> -w <wordlist>
 ```
 
+brute force directories, looking for php files:
+
+```
+gobuster dir -u http://10.129.113.34/ -w sirectory-list-2.3-medium.txt -t 100 -x php
+```

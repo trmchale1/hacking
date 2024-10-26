@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Better Shell.md",
+                "file": "Bind Shells.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Better Shell"
+              "title": "Bind Shells"
             }
           }
         ],
@@ -249,18 +249,19 @@
   },
   "active": "17b8c68c7e540981",
   "lastOpenFiles": [
-    "Priv Esc Linux.md",
+    "gobuster.md",
+    "PHP.md",
+    "feroxbuster.md",
+    "Adding to hosts file.md",
     "Better Shell.md",
+    "Priv Esc Linux.md",
     "netcat.md",
     "nmap.md",
     "Bind Shells.md",
-    "feroxbuster.md",
     "Port Forward.md",
     "john.md",
-    "gobuster.md",
     "SQLMap.md",
     "To do.md",
-    "Adding to hosts file.md",
     "Untitled",
     "DNS.md",
     "Ffuf.md",
@@ -274,7 +275,6 @@
     "Hydra.md",
     "LinPEAS.md",
     "msfvenom.md",
-    "PHP.md",
     "Responder.md",
     "SMB"
   ]
