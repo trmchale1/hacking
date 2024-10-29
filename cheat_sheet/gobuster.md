@@ -33,7 +33,7 @@ git clone https://github.com/danielmiessler/SecLists.git
 subdomains:
 
 ```
-$ gobuster dir -u <url> -w <wordlist>
+$ gobuster dns -d <url> -w <wordlist>
 ```
 
 brute force directories, looking for php files:
