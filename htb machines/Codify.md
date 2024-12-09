@@ -1,3 +1,4 @@
+I run nmap against the victim ip address, doing a version and script check.
 
 ```
 nmap -sC -sV {10.129.138.108}
